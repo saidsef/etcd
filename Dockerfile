@@ -5,10 +5,11 @@ RUN apt-get update
 RUN apt-get install -y curl git
 
 # Information Of Package
+ENV PKG_VERSION_NO=3.1.2
 ENV PKG_ALIAS=etcd
-ENV PKG_VERSION=etcd-v0.4.6
+ENV PKG_VERSION=etcd-v$PKG_VERSION_NO
 ENV PKG_PACKAGE=$PKG_VERSION-linux-amd64.tar.gz
-ENV PKG_LINK=https://github.com/coreos/etcd/releases/download/v0.4.6/$PKG_PACKAGE
+ENV PKG_LINK=https://github.com/coreos/etcd/releases/download/v$PKG_VERSION_NO/$PKG_PACKAGE
 
 # Etcd
 RUN cd /tmp && \
