@@ -21,6 +21,6 @@ RUN cd /tmp && \
 # Clean up system
 RUN rm -rf /tmp/* /var/tmp/*
 
-EXPOSE  4001 7001
+EXPOSE  2379 2380
 
 CMD ["/usr/local/etcd/etcd"]

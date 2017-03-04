@@ -10,7 +10,7 @@ Advanced uses take advantage of the consistency guarantees to implement database
 
 ## Usage
 
-Container default ports are `4001 7001`
+Container default ports are `2379 2380`
 
 ```sh
 docker run -d -P saidsef/etcd
